@@ -1,4 +1,8 @@
 /*# sourceMappingURL=styles.css.map */
+@font-face{
+    font-family: Compacta BT;
+    
+}
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +13,7 @@ a:link, a:visited {
     color:white;
 }
 header{
-    background-image: url(./BMW\ Z4\ Background\ Large.jpg);
+    background-image: url("./assets/2023-harley-davidson-120th-anniversary-lineup-first-look.jpg");
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -50,14 +54,13 @@ header{
 .icono-marcador{
     width: 20px;
 }
-.logo-bmw{
+.logo-hd{
     width: 95px;
     margin-top: 35px;
 }
 .texto-header{
     margin-left: 5%;
-    margin-top: 29%;
-    color: white;
+    margin-top: 10%;
 }
 .texto-header1{
     font-size: 40px;
@@ -70,12 +73,12 @@ header{
     font-weight: 700;
 }
 .descubrelo{
-    background-color: blue;
+    background-color: darkred;
     padding: 10px 40px 10px 40px; 
     font-weight: 700;  
 }
 .descubrelo:hover{
-    background-color: darkblue;
+    background-color: red;
 }
 
 .barra-navegador{
@@ -118,4 +121,7 @@ header{
     position: absolute;
     content: "";
     top: 128%;
+}
+a p{
+    color: black;
 }
