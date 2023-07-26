@@ -1,6 +1,6 @@
 /*# sourceMappingURL=styles.css.map */
 @font-face{
-    font-family: "Compacta BT";
+    font-family: Compacta BT;
     src: url("./assets/CompactaBT.ttf");
     font-weight: 500;
 }
@@ -40,6 +40,17 @@ header{
     justify-content: space-around;
     align-items: center;
   }
+.nav__text{
+    font-family: Compacta BT;
+    color: white;
+    letter-spacing: 1px;
+    
+}
+.nav__text:hover{
+    color: black;
+    padding-bottom: 14px;
+    border-bottom: 2px solid black;
+}
 .nav__iconos{
     width: 100%;
     display: flex;
@@ -48,6 +59,7 @@ header{
 }
 .nav__marcadores{
     width: 20px;
+    height: 20px;
 }
 .nav__logo{
     width: 95px;
@@ -55,63 +67,46 @@ header{
 }
 .texto-header{
     margin-left: 5%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .texto-header__1{
     font-size: 40px;
-    font-family: "Compacta BT";
+    font-family: Compacta BT;
 }
 .texto-header__descubrelo{
     background-color: darkred;
     padding: 10px 40px 10px 40px; 
     font-family: "Compacta BT";
     font-size: 20px;
+    letter-spacing: 1px;
 }
 .texto-header__descubrelo:hover{
     background-color: red;
 }
-
-.barra-navegador{
-    display: flex;
-    height: 10vh;
-    gap: 400px;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-.section-series{
-    margin: 70px 10% 70px 10%;
-}
-.series{
-    display: flex;
-    height: 10vh;
-    color: gray;
-    font-size: 20px;
-}
-.series::after{
-    width: 60px;
-    height: 1px;
-    background-color: gray;
-    position: absolute;
-    content: "";
-    top: 116%;
-}
-.series-lista {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 23px;
-    font-weight: 600;
-    color: gray;
-  }
-.series-lista::after{
-    width: 1150px;
-    height: 1px;
-    background-color: gray;
-    position: absolute;
-    content: "";
-    top: 128%;
-}
 a p{
     color: black;
+}
+.section-models{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 5% 20% 5% 20%;
+    cursor: pointer;
+    font-family: Compacta BT;
+    letter-spacing: 1px;
+}
+.section-models__sport:hover{
+    color: orange;
+}
+.section-models__cruiser:hover{
+    color: orange;
+}
+.section-models__grand-american-touring:hover{
+    color: orange;
+}
+.section-models__adventure-touring:hover{
+    color: orange;
+}
+.section-models__trike:hover{
+    color: orange;
 }
