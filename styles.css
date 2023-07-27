@@ -135,12 +135,18 @@ a p{
     margin: 5%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
+    gap: 10px;
 }
 .motorbikes__model{
     font-family: Compacta BT;
     letter-spacing: 1px;
     text-align: center;
+    border: 1px solid transparent;
+    transition: border-color 0.75s ease;
+    cursor: pointer;
+}
+.motorbikes__model:hover{   
+    border-color: orange;
 }
 .motorbikes_priceFrom{
     font-family: sans-serif;
