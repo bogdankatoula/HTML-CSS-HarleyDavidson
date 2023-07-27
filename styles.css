@@ -177,18 +177,31 @@ img{
     bottom: 50%;
 }
 .ropaYdecoracion__padre{
+    margin-top: 5%;
+    margin-bottom: 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.ropaYdecoaracion__model{
-    font-family: Compacta BT;
-    letter-spacing: 1px;
+.ropaYdecoracion__model{
     display: flex;
-    width: calc(33.33% - 10px);
+    flex-direction: column;
+    width: 325px;
 }
 .ropaYdecoracion img{
-    height: 80%;
+    height: 325px;
+    width: 100%;
+}
+.ropaYdecoracion h3{
+    font-family: Compacta BT;
+    letter-spacing: 1px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+.ropaYdecoracion p{
+    font-family: sans-serif;
+    font-size: small;
 }
 footer{
     background-color: black;
