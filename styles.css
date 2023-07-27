@@ -11,11 +11,12 @@
   }
 a:link, a:visited { 
     text-decoration: none;
-    color:white;
+    color: black;
 }
 header{
     background-image: url("./assets/2023-harley-davidson-120th-anniversary-lineup-first-look.jpg");
     background-size: cover;
+    background-position: center 25%;
     width: 100%;
     height: 100vh;
 }
@@ -29,7 +30,7 @@ header{
 .nav::after{
     width: 70%;
     height: 1px;
-    background-color: white;
+    background-color: black;
     position: absolute;
     content: "";
     top: 10%;
@@ -42,14 +43,12 @@ header{
   }
 .nav__text{
     font-family: Compacta BT;
-    color: white;
     letter-spacing: 1px;
-    
 }
 .nav__text:hover{
     color: black;
     padding-bottom: 14px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid orange;
 }
 .nav__iconos{
     width: 100%;
@@ -79,6 +78,7 @@ header{
     font-family: "Compacta BT";
     font-size: 20px;
     letter-spacing: 1px;
+    cursor: pointer;
 }
 .texto-header__descubrelo:hover{
     background-color: red;
@@ -90,23 +90,66 @@ a p{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 5% 20% 5% 20%;
-    cursor: pointer;
+    padding: 3% 10% 3% 10%;
     font-family: Compacta BT;
     letter-spacing: 1px;
+    background-color: white;
+}
+.section-sticky{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 .section-models__sport:hover{
     color: orange;
+    padding-bottom: 5px;
+    border-bottom: 2px solid orange;
+    cursor: pointer;
 }
 .section-models__cruiser:hover{
     color: orange;
+    padding-bottom: 5px;
+    border-bottom: 2px solid orange;
+    cursor: pointer;
 }
 .section-models__grand-american-touring:hover{
     color: orange;
+    padding-bottom: 5px;
+    border-bottom: 2px solid orange;
+    cursor: pointer;
 }
 .section-models__adventure-touring:hover{
     color: orange;
+    padding-bottom: 5px;
+    border-bottom: 2px solid orange;
+    cursor: pointer;
 }
 .section-models__trike:hover{
     color: orange;
+    padding-bottom: 5px;
+    border-bottom: 2px solid orange;
+    cursor: pointer;
+}
+.motorbikes{
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+.motorbikes__model{
+    font-family: Compacta BT;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.motorbikes_priceFrom{
+    font-family: sans-serif;
+    font-size: small;
+}
+img{
+    width: 325px;
+}
+footer{
+    background-color: black;
+    width: 100%;
 }
