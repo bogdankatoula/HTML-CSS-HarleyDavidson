@@ -146,7 +146,8 @@ a p{
     cursor: pointer;
 }
 .motorbikes__model:hover{   
-    border-color: orange;
+    border-bottom-color: orange;
+    padding-bottom: 10px;
 }
 .motorbikes_priceFrom{
     font-family: sans-serif;
