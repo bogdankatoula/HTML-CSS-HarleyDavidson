@@ -202,6 +202,9 @@ img{
     font-family: sans-serif;
     font-size: small;
 }
+.configuracion{
+    background-color: lightgrey;
+}
 .menu-configuracion{
     display: flex;
     flex-wrap: wrap;
@@ -210,7 +213,6 @@ img{
 }
 .menu-configuracion__configurador{
     display: flex;
-    background-color: lightgrey;
     width: 15%;
     height: 20vh;
     justify-content: center;
