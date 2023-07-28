@@ -206,7 +206,7 @@ img{
     display: flex;
     flex-wrap: wrap;
     margin: 5%;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .menu-configuracion__configurador{
     display: flex;
