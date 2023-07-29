@@ -1,0 +1,36 @@
+div img{
+    width:100%;
+    padding: 5%;
+}
+form {
+    width: 100%;
+    padding: 5%;
+    background-color: black;
+    color: white;
+    
+    .register {
+      display: flex;
+      flex-wrap: wrap;
+      
+      legend {
+        font-family: Compacta BT;
+        font-size: 30px;
+        letter-spacing: 1px;
+      }
+    }
+    
+    .register__label {
+      font-family: sans-serif;
+      font-size: 30px;
+    }
+    
+    button {
+      @extend .register__label; /* Corregido el nombre del selector */
+      margin-top: 2%;
+      
+      &:hover {
+        background-color: orange;
+        color: white;
+      }
+    }
+  }

@@ -426,6 +426,59 @@
           </li>
         </ul>
       </section>
+      <div>
+        <img src="./assets/HOG_Logo_Color.jpg" alt="Harley Davidson Owners Group Logo">
+      </div>
+      <form>
+        <fieldset class="register">
+          <legend>REGISRARSE</legend>
+          <label class="register__label">Nombre:
+              <input type="text" placeholder="Nombre" name="nombreYapellidos" required>
+          </label>
+          <label class="register__label">Apellidos:
+              <input type="text" placeholder="Primer apellido" name="nombreYapellidos" required>
+              <input type="text" placeholder="Segundo apellido" name="nombreYapellidos">
+          </label>
+          <label class="register__label">Género:
+              <input type="radio" name="gender">Hombre</input>
+              <input type="radio" name="gender">Mujer</input>
+          </label>
+          <label class="register__label">Fecha de nacimiento:
+              <input type="date">
+          </label>
+            <legend>Lugar de residencia:</legend>
+          <label class="register__label">Dirección:
+            <input type="text" name="domicilio" placeholder="Ej. Calle Olivar, 15">
+          </label>
+            <label class="register__label">Ciudad:
+            <input type="text" name="domicilio" placeholder="Nombre de ciudad">
+          </label>
+          <label class="register__label">País:
+            <input type="" name="domicilio" placeholder="Nombre de país">
+          </label>
+          <label class="register__label">Teléfono:
+            <input type="tel" placeholder="+34 621589254">
+          </label>
+          <label class="register__label">Gama de moto:
+              <input type="checkbox" name="gama">Sport</input>
+              <input type="checkbox" name="gama">Cruiser</input>
+              <input type="checkbox" name="gama">Grand American Touring</input>
+              <input type="checkbox" name="gama">Adventure Touring</input>
+              <input type="checkbox" name="gama">Trike</input>
+          </label>
+          <label class="register__label">Número de identificación:
+              <input type="text" placeholder="5HD6LE9C9AC509900" required>
+          </label>
+          <label class="register__label">Usuario:
+              <input type="email" placeholder="user@user.com" required>
+          </label>
+          <label class="register__label">Contraseña:
+              <input type="password" pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" required>
+          </label>
+        </fieldset>
+        <button type="submit">Registrarse</button>
+        <button type="reset">Resetear</button>
+      </form>
     </main>
     <footer>
         <img class="footer__logo" src="./assets/harley-davidson-skull-logo-vector-47043380.jpg" alt="Harley Davidson Skull Logo">
