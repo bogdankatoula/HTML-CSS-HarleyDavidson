@@ -234,6 +234,10 @@ header .texto__header--descubrelo:hover {
 }
 
 @media (min-width: 480px) {
+  .motorbikes__model {
+    font-family: Compacta BT;
+    font-size: 25px;
+  }
   .motorbikes__priceFrom {
     font-size: medium;
   }
@@ -242,6 +246,10 @@ header .texto__header--descubrelo:hover {
   }
 }
 @media (min-width: 1080px) {
+  .motorbikes__model {
+    font-family: Compacta BT;
+    font-size: 20px;
+  }
   .motorbikes__priceFrom {
     font-size: small;
   }
@@ -283,14 +291,13 @@ header .texto__header--descubrelo:hover {
   margin-top: 5%;
   margin-bottom: 5%;
 }
-.ropaYdecoracion__padre--model:focus {
-  outline: 2px solid orange;
-}
 .ropaYdecoracion__padre img {
   display: block;
   margin: auto;
   height: 325px;
   width: 325px;
+  margin: 0;
+  padding: 0;
 }
 .ropaYdecoracion__padre h3 {
   font-family: Compacta BT;
@@ -299,13 +306,104 @@ header .texto__header--descubrelo:hover {
   letter-spacing: 1px;
   margin-top: 5%;
   margin-bottom: 5%;
-  cursor: pointer;
 }
 .ropaYdecoracion__padre p {
   font-family: sans-serif;
   font-size: 18px;
 }
 
+@media (min-width: 480px) {
+  .ropaYdecoracion__header {
+    font-family: Compacta BT;
+    font-weight: 500;
+    letter-spacing: 1px;
+    position: relative;
+  }
+  .ropaYdecoracion__header--line {
+    height: 3px;
+    width: 2%;
+    background-color: orange;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    right: 60%;
+    bottom: 50%;
+    z-index: 1;
+  }
+  .ropaYdecoracion__padre {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .ropaYdecoracion__padre--model {
+    display: flex;
+    flex-direction: column;
+    width: 325px;
+  }
+  .ropaYdecoracion__padre--model:focus {
+    outline: 2px solid orange;
+  }
+  .ropaYdecoracion__padre img {
+    height: 325px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .ropaYdecoracion__padre h3 {
+    font-family: Compacta BT;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    cursor: pointer;
+  }
+  .ropaYdecoracion__padre p {
+    font-size: medium;
+  }
+}
+@media (min-width: 1080px) {
+  .ropaYdecoracion__header {
+    position: relative;
+  }
+  .ropaYdecoracion__header--line {
+    height: 3px;
+    width: 2%;
+    background-color: orange;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    right: 60%;
+    bottom: 50%;
+    z-index: 1;
+  }
+  .ropaYdecoracion__padre {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .ropaYdecoracion__padre--model {
+    display: flex;
+    flex-direction: column;
+    width: 325px;
+  }
+  .ropaYdecoracion__padre--model:focus {
+    outline: 2px solid orange;
+  }
+  .ropaYdecoracion__padre img {
+    height: 325px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .ropaYdecoracion__padre h3 {
+    cursor: pointer;
+  }
+  .ropaYdecoracion__padre p {
+    font-size: small;
+  }
+}
 .configuracion {
   background-color: lightgrey;
 }
@@ -323,19 +421,15 @@ header .texto__header--descubrelo:hover {
   justify-content: center;
   align-items: center;
   border-bottom: 10px solid white;
-  width: 100%;
+  width: 480px;
   height: 50%;
   position: relative;
-}
-.configuracion__menu--configurador:focus {
-  outline: 2px solid orange;
 }
 .configuracion__menu--configurador p {
   margin-top: 100px;
   text-align: center;
   font-family: sans-serif;
   font-size: large;
-  cursor: pointer;
 }
 .configuracion__menu--configurador--icon {
   position: absolute;
@@ -344,9 +438,41 @@ header .texto__header--descubrelo:hover {
   left: 50%;
   top: 40%;
   transform: translate(-50%, -50%);
-  cursor: pointer;
 }
 
+@media (min-width: 480px) {
+  .configuracion__menu--configurador {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 769px;
+  }
+  .configuracion__menu--configurador:focus {
+    outline: 2px solid orange;
+    border-bottom: none;
+    box-shadow: 0 10px white;
+  }
+  .configuracion__menu--configurador p {
+    font-size: medium;
+    cursor: pointer;
+  }
+  .configuracion__menu--configurador--icon {
+    width: 60px;
+    cursor: pointer;
+  }
+}
+@media (min-width: 770px) {
+  .configuracion__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .configuracion__menu--configurador {
+    width: 769px;
+  }
+}
 footer img {
   width: 100%;
   height: auto;

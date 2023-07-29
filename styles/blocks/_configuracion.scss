@@ -7,18 +7,14 @@
         &--configurador {
             @include flexcenter (row, center, center);
             border-bottom: 10px solid white;
-            width: 100%;
+            width: 480px;
             height: 50%;
             position: relative;
-            &:focus {
-                outline: 2px solid orange;
-            }
             & p {
                 margin-top: 100px;
                 text-align: center;
                 font-family: sans-serif;
                 font-size: large;
-                cursor: pointer;
             }
             &--icon {
                 position: absolute;
@@ -27,8 +23,34 @@
                 left: 50%;
                 top: 40%;
                 transform: translate(-50%,-50%);
-                cursor: pointer;
             }
         }
     }
 }
+@media(min-width: 480px){
+        .configuracion__menu--configurador {
+                @include flexcenter (row, center, center);
+                width: 769px;
+                &:focus {
+                    outline: 2px solid orange;
+                    border-bottom: none;
+                    box-shadow: 0 10px white;
+                }
+                & p {
+                    font-size: medium;
+                    cursor: pointer;
+                }
+                &--icon {
+                    width: 60px;
+                    cursor: pointer;
+                }
+            }
+        }
+@media (min-width: 770px){
+        .configuracion__menu {
+            @include flexcenter(row, center, center);
+            &--configurador {
+                width: 769px;
+            }
+        }
+    }

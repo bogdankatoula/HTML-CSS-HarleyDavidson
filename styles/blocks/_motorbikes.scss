@@ -27,6 +27,10 @@
     }
 }
 @media(min-width: 480px){
+    .motorbikes__model{
+        font-family: Compacta BT;
+        font-size: 25px;
+    }
     .motorbikes__priceFrom{
         font-size: medium;
     }
@@ -35,6 +39,10 @@
     }
 }
 @media(min-width: 1080px){
+    .motorbikes__model{
+        font-family: Compacta BT;
+        font-size: 20px;
+    }
     .motorbikes__priceFrom{
         font-size: small;
     }

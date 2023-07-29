@@ -29,15 +29,14 @@
             width: 100%;
             margin-top: 5%;
             margin-bottom: 5%;
-            &:focus{
-                outline: 2px solid orange;
-            }
         }
         & img{
                 display: block;
                 margin: auto;
                 height: 325px;
                 width: 325px;
+                margin: 0;
+                padding: 0;
             }
             & h3{
                 font-family: Compacta BT;
@@ -46,7 +45,6 @@
                 letter-spacing: 1px;
                 margin-top: 5%;
                 margin-bottom: 5%;
-                cursor: pointer;
             }
             & p{
                 font-family: sans-serif;
@@ -54,4 +52,96 @@
             }
     }
    
+}
+@media(min-width: 480px){
+    .ropaYdecoracion__header{
+        font-family: Compacta BT;
+        font-weight: 500;
+        letter-spacing: 1px;
+        position: relative;
+        &--line{
+            height: 3px;
+            width: 2%;
+            background-color: orange;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            right: 60%;
+            bottom: 50%;
+            z-index: 1;
+        }
+    }
+    .ropaYdecoracion__padre{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &--model{
+            display: flex;
+            flex-direction: column;
+            width: 325px;
+            &:focus{
+                outline: 2px solid orange;
+            }
+        }
+        & img{
+            height: 325px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        & h3{
+            font-family: Compacta BT;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            cursor: pointer;
+        }
+        & p{
+            font-size: medium;
+        }
+    }
+}
+@media(min-width: 1080px){
+    .ropaYdecoracion__header{
+        position: relative;
+        &--line{
+            height: 3px;
+            width: 2%;
+            background-color: orange;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            right: 60%;
+            bottom: 50%;
+            z-index: 1;
+        }
+    }
+    .ropaYdecoracion__padre{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &--model{
+            display: flex;
+            flex-direction: column;
+            width: 325px;
+            &:focus{
+                outline: 2px solid orange;
+            }
+        }
+        & img{
+            height: 325px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        & h3{
+            cursor: pointer;
+        }
+        & p{
+            font-size: small;
+        }
+    }
 }
