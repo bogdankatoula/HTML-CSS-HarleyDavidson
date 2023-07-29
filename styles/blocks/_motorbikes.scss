@@ -1,0 +1,28 @@
+.motorbikes{
+    border: 1px solid transparent;
+    transition: border-color 0.75s ease;
+    cursor: pointer;
+    &:focus{
+        outline: 2px solid orange;
+    }
+    &:hover{   
+        border-bottom-color: orange;
+        padding-bottom: 10px;
+    }
+    &__model{
+        font-family: Compacta BT;
+        font-size: 30px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    &__priceFrom{
+        font-family: sans-serif;
+        font-size: 20px;
+        text-align: center;
+    }
+    img{
+        width: 325px;
+        display: block;
+        margin: auto;
+    }
+}

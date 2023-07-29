@@ -1,0 +1,234 @@
+@charset "UTF-8";
+* {
+  list-style: none;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  width: 100%;
+  height: 39.5vh;
+}
+header .nav__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+}
+header .nav__icons .nav__marcadores {
+  width: 20px;
+  height: 20px;
+}
+header .nav__icons .nav__logo {
+  width: 50px;
+}
+header .nav__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+header .nav__menu .nav__text {
+  font-family: Compacta BT;
+  letter-spacing: 1px;
+  font-size: 25px;
+  color: white;
+}
+header .texto {
+  width: 100%;
+  height: 25vh;
+  margin-left: 0;
+  margin-right: 0;
+  background-image: url(/assets/2023-harley-davidson-120th-anniversary-lineup-first-look.jpg);
+  background-size: cover;
+  background-position: top;
+}
+header .texto__header--diseños {
+  padding-top: 3%;
+  margin: 0;
+  margin-left: 5%;
+  font-size: 25px;
+  font-family: Compacta BT;
+  letter-spacing: 2px;
+}
+header .texto__header--diseños--diseños {
+  padding-top: 5%;
+}
+header .texto__header--lema {
+  margin: 0;
+  margin-left: 5%;
+  font-size: 25px;
+  font-family: Compacta BT;
+  letter-spacing: 2px;
+}
+header .texto__header--lema--diseños {
+  padding-top: 5%;
+}
+header .texto__header--descubrelo {
+  margin-left: 5%;
+  background-color: darkred;
+  padding: 5px 15px;
+  font-family: Compacta BT;
+  font-size: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+header .texto__header--descubrelo a p {
+  margin-bottom: 0;
+}
+header .texto__header--descubrelo:hover {
+  background-color: red;
+}
+
+@font-face {
+  font-family: Compacta BT;
+  src: url("/assets/CompactaBT.ttf");
+  font-weight: 500;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.sticky__models {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 3% 10% 3% 10%;
+  font-family: Compacta BT;
+  letter-spacing: 1px;
+  font-size: 21px;
+  background-color: white;
+}
+.sticky__models--sport:hover {
+  color: orange;
+  padding-bottom: 5px;
+  border-bottom: 2px solid orange;
+  cursor: pointer;
+}
+.sticky__models--cruiser:hover {
+  color: orange;
+  padding-bottom: 5px;
+  border-bottom: 2px solid orange;
+  cursor: pointer;
+}
+.sticky__models--grand-american-touring:hover {
+  color: orange;
+  padding-bottom: 5px;
+  border-bottom: 2px solid orange;
+  cursor: pointer;
+}
+.sticky__models--adventure-touring:hover {
+  color: orange;
+  padding-bottom: 5px;
+  border-bottom: 2px solid orange;
+  cursor: pointer;
+}
+.sticky__models--trike:hover {
+  color: orange;
+  padding-bottom: 5px;
+  border-bottom: 2px solid orange;
+  cursor: pointer;
+}
+
+.motorbikes {
+  border: 1px solid transparent;
+  transition: border-color 0.75s ease;
+  cursor: pointer;
+}
+.motorbikes:focus {
+  outline: 2px solid orange;
+}
+.motorbikes:hover {
+  border-bottom-color: orange;
+  padding-bottom: 10px;
+}
+.motorbikes__model {
+  font-family: Compacta BT;
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.motorbikes__priceFrom {
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+.motorbikes img {
+  width: 325px;
+  display: block;
+  margin: auto;
+}
+
+.ropaYdecoracion {
+  width: 90%;
+  margin: 5%;
+  box-sizing: border-box;
+}
+.ropaYdecoracion__header {
+  font-family: Compacta BT;
+  font-weight: 500;
+  letter-spacing: 1px;
+  position: relative;
+  /* usamos modificador para poder reutilizar la linea en mas apartados donde tocaria solamente modificar right:71%  */
+}
+.ropaYdecoracion__header--line {
+  height: 3px;
+  width: 2%;
+  background-color: orange;
+  position: absolute;
+  right: 10%;
+  bottom: 50%;
+}
+.ropaYdecoracion__padre {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.ropaYdecoracion__padre--model {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.ropaYdecoracion__padre--model:focus {
+  outline: 2px solid orange;
+}
+.ropaYdecoracion__padre img {
+  display: block;
+  margin: auto;
+  height: 325px;
+  width: 325px;
+}
+.ropaYdecoracion__padre h3 {
+  font-family: Compacta BT;
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 1px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  cursor: pointer;
+}
+.ropaYdecoracion__padre p {
+  font-family: sans-serif;
+  font-size: 18px;
+}/*# sourceMappingURL=styles.css.map */

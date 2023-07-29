@@ -1,0 +1,46 @@
+.sticky{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    &__models{
+        @include flexcenter (row, center, center);
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 3% 10% 3% 10%;
+        font-family: Compacta BT;
+        letter-spacing: 1px;
+        font-size: 21px;
+        background-color: white;
+        &--sport:hover{
+            color: orange;
+            padding-bottom: 5px;
+            border-bottom: 2px solid orange;
+            cursor: pointer;
+        }
+        &--cruiser:hover{
+            color: orange;
+            padding-bottom: 5px;
+            border-bottom: 2px solid orange;
+            cursor: pointer;
+        }
+        &--grand-american-touring:hover{
+            color: orange;
+            padding-bottom: 5px;
+            border-bottom: 2px solid orange;
+            cursor: pointer;
+        }
+        &--adventure-touring:hover{
+            color: orange;
+            padding-bottom: 5px;
+            border-bottom: 2px solid orange;
+            cursor: pointer;
+        }
+        &--trike:hover{
+            color: orange;
+            padding-bottom: 5px;
+            border-bottom: 2px solid orange;
+            cursor: pointer;
+        }
+    }
+}
