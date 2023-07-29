@@ -3,7 +3,7 @@
     &__menu {
         @include flexcenter(column, center, center);
         padding: 0;
-        margin: 5%;
+        margin: 0%;
         &--configurador {
             @include flexcenter (row, center, center);
             border-bottom: 10px solid white;
