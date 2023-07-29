@@ -431,7 +431,7 @@
       </div>
       <form>
         <fieldset class="register">
-          <legend>REGISRARSE</legend>
+          <legend>REGISTRARSE</legend>
           <label class="register__label">Nombre:
               <input type="text" placeholder="Nombre" name="nombreYapellidos" required>
           </label>
@@ -440,17 +440,23 @@
               <input type="text" placeholder="Segundo apellido" name="nombreYapellidos">
           </label>
           <label class="register__label">Género:
-              <input type="radio" name="gender">Hombre</input>
-              <input type="radio" name="gender">Mujer</input>
-          </label>
+            <div class="register__label--gender">
+              <input class="register__label--radio" type="radio" name="gender" />
+              <p>Hombre</p>
+            </div>
+            <div class="register__label--gender">
+              <input class="register__label--radio" type="radio" name="gender" />
+              <p>Mujer</p>
+            </div>
+          </label>          
           <label class="register__label">Fecha de nacimiento:
               <input type="date">
           </label>
-            <legend>Lugar de residencia:</legend>
+          <legend class="register__residencia">Lugar de residencia:</legend>
           <label class="register__label">Dirección:
             <input type="text" name="domicilio" placeholder="Ej. Calle Olivar, 15">
           </label>
-            <label class="register__label">Ciudad:
+          <label class="register__label">Ciudad:
             <input type="text" name="domicilio" placeholder="Nombre de ciudad">
           </label>
           <label class="register__label">País:
@@ -460,11 +466,26 @@
             <input type="tel" placeholder="+34 621589254">
           </label>
           <label class="register__label">Gama de moto:
-              <input type="checkbox" name="gama">Sport</input>
-              <input type="checkbox" name="gama">Cruiser</input>
-              <input type="checkbox" name="gama">Grand American Touring</input>
-              <input type="checkbox" name="gama">Adventure Touring</input>
-              <input type="checkbox" name="gama">Trike</input>
+            <div class="register__label--gama">
+              <input class="register__label--checkbox" type="checkbox" name="gama"/>
+              <p>Sport</p>
+            </div>
+            <div class="register__label--gama">
+              <input class="register__label--checkbox" type="checkbox" name="gama"/>
+              <p>Cruiser</p>
+            </div>
+            <div class="register__label--gama">
+              <input class="register__label--checkbox" type="checkbox" name="gama"/>
+              <p>Grand American Touring</p>
+            </div>
+            <div class="register__label--gama">
+              <input class="register__label--checkbox" type="checkbox" name="gama"/>
+              <p>Adventure Touring</p>
+            </div>
+            <div class="register__label--gama">
+              <input class="register__label--checkbox" type="checkbox" name="gama"/>
+              <p>Trike</p>
+            </div>
           </label>
           <label class="register__label">Número de identificación:
               <input type="text" placeholder="5HD6LE9C9AC509900" required>
@@ -476,8 +497,10 @@
               <input type="password" pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" required>
           </label>
         </fieldset>
+        <div class="buttons">
         <button type="submit">Registrarse</button>
         <button type="reset">Resetear</button>
+      </div>
       </form>
     </main>
     <footer>

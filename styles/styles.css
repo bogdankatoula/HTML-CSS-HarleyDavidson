@@ -290,24 +290,57 @@ form {
   background-color: black;
   color: white;
 }
-form .register {
-  display: flex;
-  flex-wrap: wrap;
-}
 form .register legend {
   font-family: Compacta BT;
-  font-size: 30px;
+  font-size: 40px;
   letter-spacing: 1px;
 }
-form .register__label, form button {
+form .register__label {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 350px;
   font-family: sans-serif;
-  font-size: 30px;
+  font-size: 25px;
 }
-form button {
-  /* Corregido el nombre del selector */
-  margin-top: 2%;
+form .register .register__label--gama {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; /* Centra verticalmente los elementos dentro de .register__label--gama */
+  margin-bottom: 10px;
 }
-form button:hover {
+form .register p {
+  margin-left: 20px;
+}
+form .register .register__label--gender {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  align-items: center;
+}
+form .register .register__residencia {
+  font-family: sans-serif;
+  font-size: 22px;
+}
+form input {
+  padding-left: 10px;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  font-family: Compacta BT;
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin-top: 5%;
+  background-color: red;
+}
+button:hover {
   background-color: orange;
   color: white;
 }/*# sourceMappingURL=styles.css.map */
