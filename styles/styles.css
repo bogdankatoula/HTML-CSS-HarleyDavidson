@@ -304,6 +304,9 @@ form .register__label {
   font-family: sans-serif;
   font-size: 25px;
 }
+form .register #primerApellido {
+  margin-bottom: 5%;
+}
 form .register .register__label--gama {
   display: flex;
   justify-content: flex-start;
