@@ -169,6 +169,7 @@ header .texto__header--descubrelo:hover {
     justify-content: space-evenly;
     padding: 3% 10% 3% 10%;
     font-family: Compacta BT;
+    font-size: 20px;
     letter-spacing: 1px;
     background-color: white;
   }
@@ -232,6 +233,22 @@ header .texto__header--descubrelo:hover {
   margin: auto;
 }
 
+@media (min-width: 480px) {
+  .motorbikes__priceFrom {
+    font-size: medium;
+  }
+  img {
+    width: 335px;
+  }
+}
+@media (min-width: 1080px) {
+  .motorbikes__priceFrom {
+    font-size: small;
+  }
+  img {
+    width: 350px;
+  }
+}
 .ropaYdecoracion {
   width: 90%;
   margin: 5%;
