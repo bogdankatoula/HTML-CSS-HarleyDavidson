@@ -12,6 +12,60 @@
         letter-spacing: 1px;
         font-size: 21px;
         background-color: white;
+    }
+}
+@media (min-width: 480px){
+    .sticky__models{
+            @include flexcenter (row, center, center);
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 3% 10% 3% 10%;
+            font-family: Compacta BT;
+            letter-spacing: 1px;
+            font-size: 21px;
+            background-color: white;
+            &--sport:hover{
+                color: orange;
+                padding-bottom: 5px;
+                border-bottom: 2px solid orange;
+                cursor: pointer;
+            }
+            &--cruiser:hover{
+                color: orange;
+                padding-bottom: 5px;
+                border-bottom: 2px solid orange;
+                cursor: pointer;
+            }
+            &--grand-american-touring:hover{
+                color: orange;
+                padding-bottom: 5px;
+                border-bottom: 2px solid orange;
+                cursor: pointer;
+            }
+            &--adventure-touring:hover{
+                color: orange;
+                padding-bottom: 5px;
+                border-bottom: 2px solid orange;
+                cursor: pointer;
+            }
+            &--trike:hover{
+                color: orange;
+                padding-bottom: 5px;
+                border-bottom: 2px solid orange;
+                cursor: pointer;
+            }
+        }
+    }
+
+@media (min-width: 1080px){
+    .sticky__models{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 3% 10% 3% 10%;
+        font-family: Compacta BT;
+        letter-spacing: 1px;
+        background-color: white;
         &--sport:hover{
             color: orange;
             padding-bottom: 5px;

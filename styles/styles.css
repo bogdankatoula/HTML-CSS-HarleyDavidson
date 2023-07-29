@@ -116,37 +116,93 @@ header .texto__header--descubrelo:hover {
   font-size: 21px;
   background-color: white;
 }
-.sticky__models--sport:hover {
-  color: orange;
-  padding-bottom: 5px;
-  border-bottom: 2px solid orange;
-  cursor: pointer;
-}
-.sticky__models--cruiser:hover {
-  color: orange;
-  padding-bottom: 5px;
-  border-bottom: 2px solid orange;
-  cursor: pointer;
-}
-.sticky__models--grand-american-touring:hover {
-  color: orange;
-  padding-bottom: 5px;
-  border-bottom: 2px solid orange;
-  cursor: pointer;
-}
-.sticky__models--adventure-touring:hover {
-  color: orange;
-  padding-bottom: 5px;
-  border-bottom: 2px solid orange;
-  cursor: pointer;
-}
-.sticky__models--trike:hover {
-  color: orange;
-  padding-bottom: 5px;
-  border-bottom: 2px solid orange;
-  cursor: pointer;
-}
 
+@media (min-width: 480px) {
+  .sticky__models {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 3% 10% 3% 10%;
+    font-family: Compacta BT;
+    letter-spacing: 1px;
+    font-size: 21px;
+    background-color: white;
+  }
+  .sticky__models--sport:hover {
+    color: orange;
+    padding-bottom: 5px;
+    border-bottom: 2px solid orange;
+    cursor: pointer;
+  }
+  .sticky__models--cruiser:hover {
+    color: orange;
+    padding-bottom: 5px;
+    border-bottom: 2px solid orange;
+    cursor: pointer;
+  }
+  .sticky__models--grand-american-touring:hover {
+    color: orange;
+    padding-bottom: 5px;
+    border-bottom: 2px solid orange;
+    cursor: pointer;
+  }
+  .sticky__models--adventure-touring:hover {
+    color: orange;
+    padding-bottom: 5px;
+    border-bottom: 2px solid orange;
+    cursor: pointer;
+  }
+  .sticky__models--trike:hover {
+    color: orange;
+    padding-bottom: 5px;
+    border-bottom: 2px solid orange;
+    cursor: pointer;
+  }
+}
+@media (min-width: 1080px) {
+  .sticky__models {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 3% 10% 3% 10%;
+    font-family: Compacta BT;
+    letter-spacing: 1px;
+    background-color: white;
+  }
+  .sticky__models--sport:hover {
+    color: orange;
+    padding-bottom: 5px;
+    border-bottom: 2px solid orange;
+    cursor: pointer;
+  }
+  .sticky__models--cruiser:hover {
+    color: orange;
+    padding-bottom: 5px;
+    border-bottom: 2px solid orange;
+    cursor: pointer;
+  }
+  .sticky__models--grand-american-touring:hover {
+    color: orange;
+    padding-bottom: 5px;
+    border-bottom: 2px solid orange;
+    cursor: pointer;
+  }
+  .sticky__models--adventure-touring:hover {
+    color: orange;
+    padding-bottom: 5px;
+    border-bottom: 2px solid orange;
+    cursor: pointer;
+  }
+  .sticky__models--trike:hover {
+    color: orange;
+    padding-bottom: 5px;
+    border-bottom: 2px solid orange;
+    cursor: pointer;
+  }
+}
 .motorbikes {
   border: 1px solid transparent;
   transition: border-color 0.75s ease;
