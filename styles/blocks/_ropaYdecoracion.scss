@@ -13,8 +13,9 @@
             width: 2%;
             background-color: orange;
             position: absolute;
-            right: 10%;
-            bottom: 50%;
+            right: 100%;
+            top: 50%;
+            transform: translateY(-50%); /* vertically center the line with the text*/
         }
     }
     &__padre{
@@ -59,16 +60,6 @@
         font-weight: 500;
         letter-spacing: 1px;
         position: relative;
-        &--line{
-            height: 3px;
-            width: 2%;
-            background-color: orange;
-            position: absolute;
-            transform: translate(-50%, -50%);
-            right: 60%;
-            bottom: 50%;
-            z-index: 1;
-        }
     }
     .ropaYdecoracion__padre{
         margin-top: 5%;
