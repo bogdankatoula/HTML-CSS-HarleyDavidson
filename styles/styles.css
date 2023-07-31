@@ -523,7 +523,7 @@ header .texto__header--descubrelo a p {
     width: 769px;
   }
 }
-footer img {
+.footer__logo {
   width: 100%;
   height: auto;
 }
@@ -614,6 +614,13 @@ img {
   animation-timeline: --revealing-image;
   animation-range: entry 25% cover 50%;
 }
+img:not(.footer__logo) {
+  animation-name: show;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  animation-timeline: --revealing-image;
+  animation-range: entry 25% cover 50%;
+}
 
 @keyframes show {
   from {
@@ -624,4 +631,7 @@ img {
     opacity: 1;
     scale: 100%;
   }
+}
+.footer__logo {
+  animation: none;
 }/*# sourceMappingURL=styles.css.map */
