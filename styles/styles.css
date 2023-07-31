@@ -89,16 +89,50 @@ header .texto__header--descubrelo a p {
   margin-bottom: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   header {
     width: 100%;
-    height: 100vh;
+    height: 70vh;
   }
   header .nav__icons {
     display: flex;
     flex-direction: row;
     justify-content: end;
     align-items: center;
+    height: 40px;
+  }
+  header .nav__icons .nav__marcadores {
+    width: 20px;
+    height: 20px;
+    margin-right: 100px;
+  }
+  header .nav__icons .nav__logo {
+    width: 60px;
+    margin-right: 40px;
+    margin-top: 40px;
+  }
+  header .nav__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+  }
+  header .nav__menu .nav__text {
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  header .texto {
+    background-position: center 30%;
+  }
+}
+@media (min-width: 768px) {
+  header {
+    width: 100%;
+    height: 100vh;
+  }
+  header .nav__icons {
     width: 100%;
     height: 30px;
     margin: 0;
@@ -115,15 +149,7 @@ header .texto__header--descubrelo a p {
     margin-top: 30px;
   }
   header .nav__menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
     height: 30px;
-    margin: 0;
-    padding: 0;
-    background-color: black;
   }
   header .nav__menu .nav__text {
     margin-left: 100px;
@@ -133,46 +159,12 @@ header .texto__header--descubrelo a p {
     color: white;
   }
   header .texto {
-    width: 100%;
     height: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    background-image: url(/assets/2023-harley-davidson-120th-anniversary-lineup-first-look.jpg);
-    background-size: cover;
     background-position: center 65%;
   }
-  header .texto__header--diseños {
-    padding-top: 3%;
-    margin: 0;
-    margin-left: 5%;
-    font-size: 25px;
-    font-family: Compacta BT;
-    letter-spacing: 2px;
-  }
-  header .texto__header--diseños--diseños {
-    padding-top: 5%;
-  }
-  header .texto__header--lema {
-    margin: 0;
-    margin-left: 5%;
-    font-size: 25px;
-    font-family: Compacta BT;
-    letter-spacing: 2px;
-  }
-  header .texto__header--lema--diseños {
-    padding-top: 5%;
-  }
   header .texto__header--descubrelo {
-    margin-left: 5%;
-    background-color: darkred;
-    padding: 5px 15px;
-    font-family: Compacta BT;
     font-size: 20px;
-    letter-spacing: 1px;
     cursor: pointer;
-  }
-  header .texto__header--descubrelo a p {
-    margin-bottom: 0;
   }
   header .texto__header--descubrelo:hover {
     background-color: red;
@@ -355,15 +347,6 @@ header .texto__header--descubrelo a p {
   position: relative;
   /* usamos modificador para poder reutilizar la linea en mas apartados donde tocaria solamente modificar right:71%  */
 }
-.ropaYdecoracion__header--line {
-  height: 3px;
-  width: 2%;
-  background-color: orange;
-  position: absolute;
-  right: 100%;
-  top: 50%;
-  transform: translateY(-50%); /* vertically center the line with the text*/
-}
 .ropaYdecoracion__padre {
   margin-top: 5%;
   margin-bottom: 5%;
@@ -442,16 +425,6 @@ header .texto__header--descubrelo a p {
 @media (min-width: 1080px) {
   .ropaYdecoracion__header {
     position: relative;
-  }
-  .ropaYdecoracion__header--line {
-    height: 3px;
-    width: 2%;
-    background-color: orange;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    right: 60%;
-    bottom: 50%;
-    z-index: 1;
   }
   .ropaYdecoracion__padre {
     margin-top: 5%;

@@ -8,15 +8,6 @@
         letter-spacing: 1px;
         position: relative;
         /* usamos modificador para poder reutilizar la linea en mas apartados donde tocaria solamente modificar right:71%  */
-        &--line{
-            height: 3px;
-            width: 2%;
-            background-color: orange;
-            position: absolute;
-            right: 100%;
-            top: 50%;
-            transform: translateY(-50%); /* vertically center the line with the text*/
-        }
     }
     &__padre{
         margin-top: 5%;
@@ -97,16 +88,6 @@
 @media(min-width: 1080px){
     .ropaYdecoracion__header{
         position: relative;
-        &--line{
-            height: 3px;
-            width: 2%;
-            background-color: orange;
-            position: absolute;
-            transform: translate(-50%, -50%);
-            right: 60%;
-            bottom: 50%;
-            z-index: 1;
-        }
     }
     .ropaYdecoracion__padre{
         margin-top: 5%;

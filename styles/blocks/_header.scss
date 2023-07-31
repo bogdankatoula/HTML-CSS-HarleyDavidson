@@ -78,15 +78,47 @@ header{
     }
 }
 
-@media(min-width: 480px){
+@media (min-width: 480px) {
+    header {
+      width: 100%;
+      height: 70vh;
+      .nav__icons {
+        @include flexcenter(row, end, center);
+        height: 40px;
+        .nav__marcadores {
+          width: 20px;
+          height: 20px;
+          margin-right: 100px;
+        }
+        .nav__logo {
+          width: 60px;
+          margin-right: 40px;
+          margin-top: 40px;
+        }
+      }
+      .nav__menu {
+        @include flexcenter(row, flex-start, center);
+        width: 100%;
+        height: 40px;    
+        .nav__text{
+            font-size: 20px;
+            margin-left: 50px;
+        }
+      }
+      .texto {
+        background-position: center 30%;
+      }
 
-}
+    }
+    
+  }
+  
+  
 @media(min-width: 768px){
     header{
         width: 100%;
         height: 100vh;
         .nav__icons {
-            @include flexcenter(row, end, center);
                 width: 100%;
                 height: 30px;    
                 margin: 0;
@@ -104,12 +136,7 @@ header{
                   }
         }
           .nav__menu {
-            @include flexcenter(row, flex-start, center);
-            width: 100%;
-            height: 30px;    
-            margin: 0;
-            padding: 0;
-            background-color: black;
+            height: 30px;
             .nav__text{
                 margin-left: 100px;
                 font-family: Compacta BT;
@@ -119,46 +146,12 @@ header{
             }
           }
           .texto{
-            width: 100%;
             height: 100%;
-            margin-left: 0;
-            margin-right: 0;
-            background-image: url(/assets/2023-harley-davidson-120th-anniversary-lineup-first-look.jpg);
-            background-size: cover;
             background-position: center 65%;
           &__header{
-            &--diseños{
-                padding-top: 3%;
-                margin: 0;
-                margin-left: 5%;
-                font-size: 25px;
-                font-family: Compacta BT;
-                letter-spacing: 2px;
-                &--diseños{
-                    padding-top: 5%;
-                }
-            }
-            &--lema{
-                margin: 0;
-                margin-left: 5%;
-                font-size: 25px;
-                font-family: Compacta BT;
-                letter-spacing: 2px;
-                &--diseños{
-                    padding-top: 5%;
-                }
-            }
             &--descubrelo{
-                margin-left: 5%;
-                background-color: darkred;
-                padding: 5px 15px; 
-                font-family: Compacta BT;
                 font-size: 20px;
-                letter-spacing: 1px;
                 cursor: pointer;
-                a p{
-                    margin-bottom: 0;
-                }
                 &:hover{
                     background-color: red;
                 }
